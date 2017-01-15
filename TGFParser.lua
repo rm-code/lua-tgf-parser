@@ -82,11 +82,11 @@ function TGFParser.parse( path )
     end
 
     -- Splits each line of the edge definitions and stores them inside of the
-    -- edge table as edges[i] = { from = nodeId1, to = nodeId2, edge = edgeName }.
+    -- edge table as edges[i] = { from = nodeId1, to = nodeId2, name = edgeName }.
     for _, line in ipairs( edges ) do
         local f, t, e = string.match( line, '(%d+) (%d+) (.+)' );
         f, t = tonumber( f ), tonumber( t );
-        graph.edges[#graph.edges + 1] = { from = f, to = t, edge = e };
+        graph.edges[#graph.edges + 1] = { from = f, to = t, name = e };
     end
 
     return graph;
