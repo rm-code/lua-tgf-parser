@@ -23,7 +23,7 @@
 -- ============================================================================== --
 
 local TGFParser = {
-    _VERSION     = '1.0.2',
+    _VERSION     = '1.0.3',
     _DESCRIPTION = 'A parser for "Trivial Graph Format" (TGF) files written in Lua.',
     _URL         = 'https://github.com/rm-code/lua-tgf-parser/',
 };
